@@ -1,5 +1,5 @@
 {
-  "name": "nose",
+  "name": "nosed",
   "version": "1.0.0",
   "description": "Add some much needed noses to your website.",
   "main": "index.js",
