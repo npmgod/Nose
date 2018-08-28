@@ -63,7 +63,7 @@ function createNoses(amount) {
       // Apply to element
       nose.el.css(
         'transform',
-        'scale(' + nose.scale + ') rotate(' + nose.rot + ')'
+        'scale(' + nose.scale + ') rotate(' + nose.rot + 'rad)'
       );
     }
   }, 1000 / 30);
