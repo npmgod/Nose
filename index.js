@@ -1,6 +1,6 @@
 // http://www.stickpng.com/assets/images/590602570cbeef0acff9a633.png
 var $ = require('jquery');
-var amount = [5, 10];
+var amountRange = [5, 10];
 var scale = [0.4, 0.725];
 var wiggleSpeed = [0.4, 2.5];
 
@@ -12,7 +12,7 @@ function getRandom(min, max) {
 
 // Generate the noses
 function createNoses(amount) {
-  var amount = amount || getRandom(amount[0], amount[1]);
+  var amount = amount || getRandom(amountRange[0], amountRange[1]);
   var pageWidth = $('body').width();
   var pageHeight = $('body').height();
   var noses = [];
