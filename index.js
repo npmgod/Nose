@@ -51,16 +51,14 @@ function createNoses(amount) {
 
   // Update the noses (animate them)
   setInterval(function() {
-    console.log('amount of noses', noses.length);
     for (var i = 0; i < noses.length; i++) {
-      console.log('nose ' + i);
       var nose = noses[i];
 
       // Run the timer the sinewave is based on
-      nose.timer += nose.wiggleSPeed;
+      nose.timer += nose.wiggleSpeed;
 
       // Apply the sine to the rotation
-      nose.rot = Math.sin(nose.timer);
+      nose.rot = Math.sin(nose.timer) * 2;
 
       // Apply to element
       nose.el.css(
