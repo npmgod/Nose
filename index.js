@@ -51,7 +51,7 @@ function createNoses(amount) {
 
   // Update the noses (animate them)
   setInterval(function() {
-    console.log('amount of noses', nose.length);
+    console.log('amount of noses', noses.length);
     for (var i = 0; i < noses.length; i++) {
       console.log('nose ' + i);
       var nose = noses[i];
