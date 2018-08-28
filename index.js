@@ -1,8 +1,8 @@
 // http://www.stickpng.com/assets/images/590602570cbeef0acff9a633.png
 var $ = require('jquery');
 var amountRange = [5, 10];
-var scale = [0.4, 0.725];
-var wiggleSpeed = [0.4, 2.5];
+var scaleRange = [0.4, 0.725];
+var wiggleSpeedRange = [0.4, 2.5];
 
 // Get a random integer from 0 to the number
 // specified
@@ -18,7 +18,7 @@ function createNoses(amount) {
   var noses = [];
 
   for (var i = 0; i < amount; i++) {
-    var scale = getRandom(scale[0] * 100, scale[1] * 100) / 100;
+    var scale = getRandom(scaleRange[0] * 100, scaleRange[1] * 100) / 100;
 
     // The markup
     var el = $(
