@@ -1,8 +1,8 @@
 // http://www.stickpng.com/assets/images/590602570cbeef0acff9a633.png
 var $ = require('jquery');
 var amountRange = [5, 10];
-var scaleRange = [0.4, 0.725];
-var wiggleSpeedRange = [0.4, 2.5];
+var scaleRange = [0.2, 0.45];
+var wiggleSpeedRange = [0.1, 10];
 
 // Get a random integer from 0 to the number
 // specified
@@ -39,13 +39,32 @@ function createNoses(amount) {
     $('body').append(el);
 
     // Store the element
-    noses.push({ el: el, scale: scale });
+    noses.push({
+      el: el,
+      scale: scale,
+      timer: 0,
+      wiggleSpeed:
+        getRandom(wiggleSpeedRange[0] * 100, wiggleSpeedRange[1] * 100) / 100,
+      rot: 0
+    });
   }
 
   // Update the noses (animate them)
   setInterval(function() {
     for (var i = 0; i < noses.length; i++) {
       var nose = noses[i];
+
+      // Run the timer the sinewave is based on
+      nose.timer += nose.wiggleSPeed;
+
+      // Apply the sine to the rotation
+      nose.rot = Math.sin(nose.timer);
+
+      // Apply to element
+      nose.el.css(
+        'transform',
+        'scale(' + nose.scale + ') rotate(' + nose.rot + ')'
+      );
     }
   }, 1000 / 30);
 }
