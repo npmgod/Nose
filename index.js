@@ -1,6 +1,6 @@
 // http://www.stickpng.com/assets/images/590602570cbeef0acff9a633.png
 var $ = require('jquery');
-var amountRange = [5, 10];
+var amountRange = [4, 6];
 var scaleRange = [0.2, 0.45];
 var wiggleSpeedRange = [0.01, 0.2];
 
