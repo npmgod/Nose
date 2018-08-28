@@ -35,6 +35,9 @@ function createNoses(amount) {
     // Scaling
     el.css('transform', 'scale(' + scale + ')');
 
+    // Remove pointer events
+    el.css('pointer-events', 'none');
+
     // Injection
     $('body').append(el);
 
