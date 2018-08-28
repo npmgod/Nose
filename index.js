@@ -2,7 +2,7 @@
 var $ = require('jquery');
 var amountRange = [5, 10];
 var scaleRange = [0.2, 0.45];
-var wiggleSpeedRange = [0.1, 1];
+var wiggleSpeedRange = [0.01, 0.2];
 
 // Get a random integer from 0 to the number
 // specified
@@ -44,7 +44,8 @@ function createNoses(amount) {
       scale: scale,
       timer: 0,
       wiggleSpeed:
-        getRandom(wiggleSpeedRange[0] * 100, wiggleSpeedRange[1] * 100) / 100,
+        getRandom(wiggleSpeedRange[0] * 1000, wiggleSpeedRange[1] * 1000) /
+        1000,
       rot: 0
     });
   }
