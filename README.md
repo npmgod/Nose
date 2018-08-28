@@ -2,7 +2,7 @@
 Do you want people to *smell* just how great your site is? Have you ever needed some wiggling noses to spice up your page? Well look no further! Finally, a node package for nosing your page.
 
 # Install
-`npm install nose`
+`npm install nose --save`
 
 # Usage
 ```
