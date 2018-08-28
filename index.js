@@ -26,8 +26,11 @@ function createNoses(amount) {
     );
 
     // Positioning
-    el.css('left', getRandom(0, pageWidth));
-    el.css('top', getRandom(0, pageHeight));
+    el.css({
+      position: 'absolute',
+      left: getRandom(0, pageWidth),
+      top: getRandom(0, pageHeight)
+    });
 
     // Scaling
     el.css('transform', 'scale(' + scale + ')');
