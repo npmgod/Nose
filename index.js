@@ -2,7 +2,7 @@
 var $ = require('jquery');
 var amountRange = [5, 10];
 var scaleRange = [0.2, 0.45];
-var wiggleSpeedRange = [0.1, 10];
+var wiggleSpeedRange = [0.1, 1];
 
 // Get a random integer from 0 to the number
 // specified
