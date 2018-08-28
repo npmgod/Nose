@@ -1,0 +1,33 @@
+{
+  "name": "nose",
+  "version": "1.0.0",
+  "description": "Add some much needed noses to your website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npmgod/Nose.git"
+  },
+  "keywords": [
+    "Nose",
+    "noses",
+    "comedy",
+    "meme",
+    "nosey",
+    "nosifier",
+    "noser",
+    "smell",
+    "sniff",
+    "wiff",
+    "snort",
+    "scent"
+  ],
+  "author": "Gage Henderson <gage@quangoinc.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npmgod/Nose/issues"
+  },
+  "homepage": "https://github.com/npmgod/Nose#readme"
+}
