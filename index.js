@@ -51,7 +51,9 @@ function createNoses(amount) {
 
   // Update the noses (animate them)
   setInterval(function() {
+    console.log('amount of noses', nose.length);
     for (var i = 0; i < noses.length; i++) {
+      console.log('nose ' + i);
       var nose = noses[i];
 
       // Run the timer the sinewave is based on
