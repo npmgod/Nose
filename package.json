@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/npmgod/Nose/issues"
   },
-  "homepage": "https://github.com/npmgod/Nose#readme"
+  "homepage": "https://github.com/npmgod/Nose#readme",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
